@@ -90,6 +90,8 @@
 			<Item Name="本地控制.vi" Type="VI" URL="../子vi/本地控制.vi"/>
 			<Item Name="产品SN消息解析.vi" Type="VI" URL="../子vi/mes/产品SN消息解析.vi"/>
 			<Item Name="机台号设置.vi" Type="VI" URL="../子vi/mes/机台号设置.vi"/>
+			<Item Name="扫码枪设置.vi" Type="VI" URL="../子vi/扫码/扫码枪设置.vi"/>
+			<Item Name="扫码状态查询.vi" Type="VI" URL="../子vi/扫码/扫码状态查询.vi"/>
 			<Item Name="温湿度采集.vi" Type="VI" URL="../子vi/温湿度/温湿度采集.vi"/>
 			<Item Name="用户登录.vi" Type="VI" URL="../子vi/用户登录/用户登录.vi"/>
 		</Item>
@@ -247,6 +249,7 @@
 				<Item Name="Empty 2D Array (Variant)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/array/array.llb/Empty 2D Array (Variant)__ogtk.vi"/>
 				<Item Name="Empty Array (Variant)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/array/array.llb/Empty Array (Variant)__ogtk.vi"/>
 				<Item Name="Empty Array__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/array/array.llb/Empty Array__ogtk.vi"/>
+				<Item Name="End of Line Constant (bug fix).vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/string/string.llb/End of Line Constant (bug fix).vi"/>
 				<Item Name="EXT Changed__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/comparison/comparison.llb/EXT Changed__ogtk.vi"/>
 				<Item Name="Filter 1D Array (Boolean)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/array/array.llb/Filter 1D Array (Boolean)__ogtk.vi"/>
 				<Item Name="Filter 1D Array (CDB)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/array/array.llb/Filter 1D Array (CDB)__ogtk.vi"/>
@@ -569,6 +572,9 @@
 				<Item Name="U16s to Bytes.vi" Type="VI" URL="/&lt;vilib&gt;/NI/Modbus Library/Utility/U16s to Bytes.vi"/>
 				<Item Name="Unset Busy.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/cursorutil.llb/Unset Busy.vi"/>
 				<Item Name="Variant to XML - core - __JKI EasyXML.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/EasyXML/JKI_EasyXML.llb/Variant to XML - core - __JKI EasyXML.vi"/>
+				<Item Name="VISA Configure Serial Port" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port"/>
+				<Item Name="VISA Configure Serial Port (Instr).vi" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port (Instr).vi"/>
+				<Item Name="VISA Configure Serial Port (Serial Instr).vi" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port (Serial Instr).vi"/>
 				<Item Name="VISA Flush IO Buffer Mask.ctl" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Flush IO Buffer Mask.ctl"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 				<Item Name="Write Delimited Spreadsheet (DBL).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet (DBL).vi"/>
@@ -583,9 +589,11 @@
 				<Item Name="XML Tag Type - Enum__JKI EasyXML.ctl" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/EasyXML/JKI_EasyXML.llb/XML Tag Type - Enum__JKI EasyXML.ctl"/>
 			</Item>
 			<Item Name="check.vi" Type="VI" URL="../子vi/用户登录/check.vi"/>
+			<Item Name="Serial - Settings.ctl" Type="VI" URL="/E/National Instruments/LabVIEW 2018/examples/Instrument IO/Serial/support/Serial - Settings.ctl"/>
 			<Item Name="SOAP解析.vi" Type="VI" URL="../子vi/mes/SOAP解析.vi"/>
 			<Item Name="读取配置文件.vi" Type="VI" URL="../子vi/config/读取配置文件.vi"/>
 			<Item Name="读线圈组.vi" Type="VI" URL="../子vi/modbus/读线圈组.vi"/>
+			<Item Name="固定扫码器扫码.vi" Type="VI" URL="../子vi/扫码/固定扫码器扫码.vi"/>
 			<Item Name="通讯参数设置.vi" Type="VI" URL="../子vi/modbus/通讯参数设置.vi"/>
 			<Item Name="写入单个线圈.vi" Type="VI" URL="../子vi/modbus/写入单个线圈.vi"/>
 			<Item Name="写入数据库.vi" Type="VI" URL="../子vi/写入数据库.vi"/>
@@ -660,7 +668,7 @@
 				<Property Name="INST_installerName" Type="Str">setup.exe</Property>
 				<Property Name="INST_language" Type="Int">2052</Property>
 				<Property Name="INST_productName" Type="Str">仁莫密封检测系统</Property>
-				<Property Name="INST_productVersion" Type="Str">1.0.20</Property>
+				<Property Name="INST_productVersion" Type="Str">1.0.23</Property>
 				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
 				<Property Name="InstSpecVersion" Type="Str">20018000</Property>
 				<Property Name="MSI_arpCompany" Type="Str">renmotech</Property>
@@ -706,7 +714,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{2F8379E6-F4DF-4F19-881C-A12D2AA0041F}</Property>
-				<Property Name="Bld_version.build" Type="Int">105</Property>
+				<Property Name="Bld_version.build" Type="Int">117</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">仁莫密封检测系统.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../exe/NI_AB_PROJECTNAME.exe</Property>
