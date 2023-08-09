@@ -74,6 +74,7 @@
 		<Item Name="子vi" Type="Folder">
 			<Item Name="ADD RECORD消息解析.vi" Type="VI" URL="../子vi/mes/ADD RECORD消息解析.vi"/>
 			<Item Name="ADD_RECORD.vi" Type="VI" URL="../子vi/mes/ADD_RECORD.vi"/>
+			<Item Name="FGV_Boolean.vi" Type="VI" URL="../子vi/FGV_Boolean.vi"/>
 			<Item Name="Global.vi" Type="VI" URL="../子vi/Global.vi"/>
 			<Item Name="KPSN_Input.ctl" Type="VI" URL="../子vi/mes/ctl/KPSN_Input.ctl"/>
 			<Item Name="log.vi" Type="VI" URL="../子vi/log.vi"/>
@@ -90,11 +91,10 @@
 			<Item Name="本地控制.vi" Type="VI" URL="../子vi/本地控制.vi"/>
 			<Item Name="产品SN消息解析.vi" Type="VI" URL="../子vi/mes/产品SN消息解析.vi"/>
 			<Item Name="机台号设置.vi" Type="VI" URL="../子vi/mes/机台号设置.vi"/>
-			<Item Name="扫码枪设置.vi" Type="VI" URL="../子vi/扫码/扫码枪设置.vi"/>
-			<Item Name="扫码状态查询.vi" Type="VI" URL="../子vi/扫码/扫码状态查询.vi"/>
 			<Item Name="温湿度采集.vi" Type="VI" URL="../子vi/温湿度/温湿度采集.vi"/>
 			<Item Name="用户登录.vi" Type="VI" URL="../子vi/用户登录/用户登录.vi"/>
 		</Item>
+		<Item Name="RTU Data Unit.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/Modbus Library/Transmission Data Unit/RTU/RTU Data Unit.lvclass"/>
 		<Item Name="仁莫密封检测系统.vi" Type="VI" URL="../仁莫密封检测系统.vi"/>
 		<Item Name="依赖关系" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
@@ -543,7 +543,6 @@
 				<Item Name="Remove Headers from XML__JKI EasyXML.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/EasyXML/JKI_EasyXML.llb/Remove Headers from XML__JKI EasyXML.vi"/>
 				<Item Name="Remove Indentation__JKI EasyXML.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/EasyXML/JKI_EasyXML.llb/Remove Indentation__JKI EasyXML.vi"/>
 				<Item Name="Remove Raw XML Tag from Data Name__JKI EasyXML.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/EasyXML/JKI_EasyXML.llb/Remove Raw XML Tag from Data Name__JKI EasyXML.vi"/>
-				<Item Name="RTU Data Unit.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/Modbus Library/Transmission Data Unit/RTU/RTU Data Unit.lvclass"/>
 				<Item Name="Search 1D Array (String)--SUBROUTINE__JKI EasyXML.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/EasyXML/JKI_EasyXML.llb/Search 1D Array (String)--SUBROUTINE__JKI EasyXML.vi"/>
 				<Item Name="Serial Data Unit.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/Modbus Library/Transmission Data Unit/Serial Interface/Serial Data Unit.lvclass"/>
 				<Item Name="Serial Master.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/Modbus Library/Network Protocol/Network Master/Serial/Serial Master.lvclass"/>
@@ -572,9 +571,6 @@
 				<Item Name="U16s to Bytes.vi" Type="VI" URL="/&lt;vilib&gt;/NI/Modbus Library/Utility/U16s to Bytes.vi"/>
 				<Item Name="Unset Busy.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/cursorutil.llb/Unset Busy.vi"/>
 				<Item Name="Variant to XML - core - __JKI EasyXML.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/EasyXML/JKI_EasyXML.llb/Variant to XML - core - __JKI EasyXML.vi"/>
-				<Item Name="VISA Configure Serial Port" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port"/>
-				<Item Name="VISA Configure Serial Port (Instr).vi" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port (Instr).vi"/>
-				<Item Name="VISA Configure Serial Port (Serial Instr).vi" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port (Serial Instr).vi"/>
 				<Item Name="VISA Flush IO Buffer Mask.ctl" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Flush IO Buffer Mask.ctl"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 				<Item Name="Write Delimited Spreadsheet (DBL).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet (DBL).vi"/>
@@ -589,11 +585,9 @@
 				<Item Name="XML Tag Type - Enum__JKI EasyXML.ctl" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/EasyXML/JKI_EasyXML.llb/XML Tag Type - Enum__JKI EasyXML.ctl"/>
 			</Item>
 			<Item Name="check.vi" Type="VI" URL="../子vi/用户登录/check.vi"/>
-			<Item Name="Serial - Settings.ctl" Type="VI" URL="/E/National Instruments/LabVIEW 2018/examples/Instrument IO/Serial/support/Serial - Settings.ctl"/>
 			<Item Name="SOAP解析.vi" Type="VI" URL="../子vi/mes/SOAP解析.vi"/>
 			<Item Name="读取配置文件.vi" Type="VI" URL="../子vi/config/读取配置文件.vi"/>
 			<Item Name="读线圈组.vi" Type="VI" URL="../子vi/modbus/读线圈组.vi"/>
-			<Item Name="固定扫码器扫码.vi" Type="VI" URL="../子vi/扫码/固定扫码器扫码.vi"/>
 			<Item Name="通讯参数设置.vi" Type="VI" URL="../子vi/modbus/通讯参数设置.vi"/>
 			<Item Name="写入单个线圈.vi" Type="VI" URL="../子vi/modbus/写入单个线圈.vi"/>
 			<Item Name="写入数据库.vi" Type="VI" URL="../子vi/写入数据库.vi"/>
@@ -668,7 +662,7 @@
 				<Property Name="INST_installerName" Type="Str">setup.exe</Property>
 				<Property Name="INST_language" Type="Int">2052</Property>
 				<Property Name="INST_productName" Type="Str">仁莫密封检测系统</Property>
-				<Property Name="INST_productVersion" Type="Str">1.0.23</Property>
+				<Property Name="INST_productVersion" Type="Str">1.0.20</Property>
 				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
 				<Property Name="InstSpecVersion" Type="Str">20018000</Property>
 				<Property Name="MSI_arpCompany" Type="Str">renmotech</Property>
@@ -706,7 +700,6 @@
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{48FA11CE-5B08-4128-ABFB-78D5EAE16A3F}</Property>
 				<Property Name="Bld_buildSpecName" Type="Str">仁莫密封检测系统</Property>
-				<Property Name="Bld_defaultLanguage" Type="Str">ChineseS</Property>
 				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
@@ -714,7 +707,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{2F8379E6-F4DF-4F19-881C-A12D2AA0041F}</Property>
-				<Property Name="Bld_version.build" Type="Int">118</Property>
+				<Property Name="Bld_version.build" Type="Int">115</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">仁莫密封检测系统.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../exe/NI_AB_PROJECTNAME.exe</Property>
@@ -726,7 +719,7 @@
 				<Property Name="Destination[1].path.type" Type="Str">relativeToProject</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/我的电脑/data/touchgfx.ico</Property>
-				<Property Name="Source[0].itemID" Type="Str">{E79B00CA-240F-483E-9DDB-61B97B3A362B}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{8D7F76AF-76ED-490F-AE3D-B923A480BDAC}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/我的电脑/仁莫密封检测系统.vi</Property>
